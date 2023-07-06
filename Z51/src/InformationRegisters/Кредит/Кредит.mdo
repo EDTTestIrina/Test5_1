@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b2f3e3c2-6696-4e44-8dd2-4d1760201e8a">
+  <producedTypes>
+    <selectionType typeId="cc46be7f-b782-400e-a614-2f2b9c545b79" valueTypeId="8ef8c796-ce08-44bf-9a28-e402457e72c6"/>
+    <listType typeId="22b1ed7d-c065-49b5-a177-19fbaf93acb9" valueTypeId="0fb90dd7-3024-4f61-ab65-bea8e6b143a5"/>
+    <managerType typeId="e1d5ba69-fa12-43d1-be59-0242ed46ccc6" valueTypeId="38cf1da8-832e-404d-9c03-3b392eb71320"/>
+    <recordSetType typeId="ee9256c7-6706-4de7-a39e-98187b3b349c" valueTypeId="466beb05-e5b1-4133-91c0-386eb738e346"/>
+    <recordKeyType typeId="b433e47e-d4d8-46bb-84c3-cb664303c4a5" valueTypeId="45c50b27-1311-4312-b7d4-c8fef161eb92"/>
+    <recordType typeId="bbbfb5a1-5d05-4c11-bcd4-f416444f2838" valueTypeId="77091cb6-6d64-4a60-82e2-8db3ca8123da"/>
+    <recordManagerType typeId="a64aae50-d91f-4c11-92f3-d2727e980521" valueTypeId="4e03e4be-2b4b-4fde-a0dc-30891b8210fc"/>
+  </producedTypes>
+  <name>Кредит</name>
+  <synonym>
+    <key>ru</key>
+    <value>Кредит</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="69aaa88b-234e-4a84-8013-d3747db54cbb">
+    <name>Датакредита</name>
+    <synonym>
+      <key>ru</key>
+      <value>Датакредита</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="58a8ebab-124c-4e13-ad32-5e691f912949">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="b930a728-a0fe-4708-8883-f07c4a4f5a61">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c6711f05-137f-4b79-8b25-02a107bb7df2">
+  <producedTypes>
+    <objectType typeId="9716df40-f60f-4e0a-ad0f-67c784b1e151" valueTypeId="6e06588e-7d73-4cb2-8836-bd2f8f233587"/>
+    <refType typeId="67b0c8dd-201b-4981-bb8d-833253385e5a" valueTypeId="79691815-0b86-4a7e-9592-b71afbf6aef6"/>
+    <selectionType typeId="bffcef87-a1cb-4a52-972a-6351c0f3eef9" valueTypeId="c59e890c-1c2c-4afa-83c0-342dd3040c93"/>
+    <listType typeId="9dbb411d-4bf4-4f78-bd3c-0f35d233fdaa" valueTypeId="971a3fbd-8b24-4f15-8ce9-da5ef0435618"/>
+    <managerType typeId="76aaed90-4711-4af7-9193-b0382a663704" valueTypeId="bb838d65-8871-4a72-aced-4e9f3f730196"/>
+  </producedTypes>
+  <name>ПриходДенег</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приход денег</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПриходДенег.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ПриходДенег.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>AccumulationRegister.Взаиморасчеты</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="e1ae4da7-ded6-49eb-a129-054c01bd1307">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4185180d-f39b-4566-806a-9b46b7763d2e">
+    <name>Суммаподокументу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Суммаподокументу</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="e6742cd4-1901-4325-904c-494069b11226">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Document>
